@@ -32,6 +32,7 @@ on:
         options:
          - ubuntu-latest
          - windows-latest
+         - DESKTOP-36LOG79
          
       run_pre_validation:
         description: "Run Stage 1: pre-migration checks (open PRs + large-file report)"
