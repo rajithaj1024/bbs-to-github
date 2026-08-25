@@ -29,7 +29,6 @@ on:
         required: false
         default: ubuntu-latest
         type: string
-      
       run_pre_validation:
         description: "Run Stage 1: pre-migration checks (open PRs + large-file report)"
         required: true
