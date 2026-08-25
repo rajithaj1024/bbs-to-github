@@ -26,9 +26,13 @@ on:
         type: boolean
       runner_label:
         description: 'Runner label to run on (e.g. ubuntu-latest, or your self-hosted runner label). For multiple labels pass a JSON array, e.g. ["self-hosted","bbs"].'
-        required: false
+        required: true
         default: ubuntu-latest
-        type: string
+        type: choice
+        options:
+         - ubuntu-latest
+         - windows-latest
+         
       run_pre_validation:
         description: "Run Stage 1: pre-migration checks (open PRs + large-file report)"
         required: true
